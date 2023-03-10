@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+}
+
+.cabeçalho{
+    background-color: #bd96c6;
+}
+.imag{
+
+}
+.barra{
+    background-color: #7e7d7f;
+}
+
+.titulo{
+    text-align: center;
+    
+}
+.imagem{
+    margin-left: 25%;
+    width: 486px;
+}
+.navega{
+    display: flex;
+    text-align: end
+}
+
+
+
+.hero{
+    background-color:#f0e6ef;
+}
