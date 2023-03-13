@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Revenda de Veiculo Js</h1>
+    <hr>
+    <p>
+        Veiculo:
+        <input type="text" id="inVeiculo">
+    </p>
+
+    <p>
+        Preço R$:
+        <input type="text" id="inDinheiro">
+    </p>
+
+    <p>
+        <input type="button" value="ver Promoção" id="btnConverter">
+    </p>
+
+    <p id="outNome"></p>
+    <p id="outPreco"></p>
+    <p id="outSaida"></p>
+
+    <script>
+        function converterpreco(){
+
+            let inVeiculo = document.getElementById('inVeiculo')
+            let inDinheiro = document.getElementById('inDinheiro')
+            let outNome = document.getElementById('outNome')
+            let outPreco = document.getElementById('outPreco')
+            let outSaida = document.getElementById('outSaida')
+
+            let Veiculo = inVeiculo.value
+            let preco = inDinheiro.value
+
+            Dinheiro = preco * 0.5
+
+            let parcela = preco * 0.5 / 12
+
+
+
+            outNome.textContent = `Veiculo e:${Veiculo}`
+            outPreco.textContent = `Entrada de R$ ${Dinheiro}`
+            outSaida.textContent = `12X R$${parcela.toFixed(2)}`
+        }
+
+        let btnConverter = document.getElementById('btnConverter')
+
+        btnConverter.addEventListener('click', converterpreco)
+    </script>
+
+</body>
+</html>

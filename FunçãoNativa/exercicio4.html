@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Farmácia Js</h1>
+    <hr>
+    <p>
+        Medicamento
+        <input type="text" id="inMedicamento">
+    </p>
+
+    <p>
+        Preço R$ :
+        <input type="text" id="inPreco">
+    </p>
+
+    <p>
+        <input type="button" value="Mostrar Promoção" id="btnConverter">
+    </p>
+
+    <p id="outMedicamento"></p>
+    <pi id="outPreco"></p>
+    
+
+    <script>
+        function converterpromocao(){
+
+            let inMedicamento = document.getElementById('inMedicamento')
+            let inPreco = document.getElementById('inPreco')
+            let outMedicamento = document.getElementById('outMedicamento')
+            let outPreco = document.getElementById('outPreco')
+           
+            let Medicamento = inMedicamento.value
+            let preco = inPreco.value
+
+            preco = Math.floor (preco*2)
+            
+
+
+            outMedicamento.textContent = `Promoção de${Medicamento}`
+            outPreco.textContent = `Leve 2 por apenas: R$${preco.toFixed(2)}`
+            
+        }
+
+        let btnConverter = document.getElementById('btnConverter')
+
+        btnConverter.addEventListener('click', converterpromocao)
+    </script>
+</body>
+</html>
