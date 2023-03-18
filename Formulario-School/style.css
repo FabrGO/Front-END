@@ -1,0 +1,46 @@
+body{
+background-color: black;
+}
+.container{
+    background-color: black;
+    height: 500px;
+}
+.titulo{
+    color: white;
+}
+
+.tudo{
+    display: flex;
+}
+
+.img{
+    display: flex;
+}
+
+.imgg{
+    width: 150.23px;
+    height:  300.48px;
+}
+
+.form{
+    background-color: white;
+}
+
+svg{
+    color: black;
+}
+
+/* 
+label{
+    position: relative;
+}
+label::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url(EnvelopeSimple.svg);
+
+} */
