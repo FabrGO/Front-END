@@ -1,0 +1,40 @@
+body{
+    background-color: orange;
+}
+.container{
+    background-color: white;
+    width: 220px;
+    height: 470px;
+    border-radius: 7%;
+    margin: auto;
+}
+
+.btnF{
+    border-radius: 100px;
+    
+}
+
+.lista{
+    padding-left: 20px;
+}
+.bloco{
+    border: solid 1px gray;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(254, 208, 26);
+    margin-top: 30px;
+    padding-bottom: px;
+    
+    
+
+}
+
+.link{
+    text-decoration: none;
+   
+}
